@@ -19,7 +19,7 @@
 (set-face-foreground 'font-lock-constant-face "#d1b897")
 (set-face-foreground 'font-lock-function-name-face fg-color)
 (set-face-foreground 'font-lock-variable-name-face fg-color)
-(set-face-foreground 'font-lock-string-face "#A6AA9A")
+(set-face-foreground 'font-lock-string-face xanadu) ;; #A6AA9A
 (set-face-foreground 'font-lock-comment-face "#44A368")
 
 (set-face-foreground 'minibuffer-prompt "#41D1A1")
