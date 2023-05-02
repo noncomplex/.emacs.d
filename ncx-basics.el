@@ -34,7 +34,7 @@
   (interactive)
   ;; (shell-command "cmder"))
   (cond ((eq system-type 'windows-nt) (shell-command (concat "wt -w _quake -d" (file-name-directory buffer-file-name))))
-	((eq system-type 'darwin) nil)
-	((eq system-type 'gnu/linux) nil)))
+	((eq system-type 'darwin) (shell-command (concat "open -a iTerm " (file-name-directory buffer-file-name))))
+	((eq system-type 'gnu/linux) nil))) ;; adding these as necessary
 
 (global-set-key (kbd "M-S") 'open-terminal)
