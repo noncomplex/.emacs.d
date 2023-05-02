@@ -21,7 +21,6 @@
 (setq undo-limit 20000000)
 (setq undo-strong-limit 40000000)
 
-
 (require 'ido)
 (ido-mode 1)
 (setq ido-enable-flex-matching t)
@@ -33,5 +32,9 @@
 
 (defun open-terminal ()
   (interactive)
-  (shell-command "cmder"))
+  ;; (shell-command "cmder"))
+  (cond ((eq system-type 'windows-nt) (shell-command (concat "wt -w _quake -d" (file-name-directory buffer-file-name))))
+	((eq system-type 'darwin) nil)
+	((eq system-type 'gnu/linux) nil)))
+
 (global-set-key (kbd "M-S") 'open-terminal)
