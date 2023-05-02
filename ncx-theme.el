@@ -9,6 +9,7 @@
 (setq mystic "#D65282") ;; use for errors
 (set-background-color "#3B3F4D") ;; forgot what, but based on #262832
 (set-background-color "#1F262A") ;; switch between this and the above
+(set-background-color "#262832")
 (set-foreground-color fg-color)
 
 (set-cursor-color mystic)
