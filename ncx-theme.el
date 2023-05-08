@@ -26,6 +26,9 @@
 (set-face-foreground 'minibuffer-prompt "#41D1A1")
 (set-face-foreground 'ido-subdir "#738678")
 
+(set-face-background 'region "#72a4ff")
+(set-face-foreground 'region "white")
+
 (set-face-attribute 'mode-line nil
                     :background "#1F262A"
 		    :foreground fg-color
@@ -34,3 +37,4 @@
                     :background "#1F262A"
 		    :foreground xanadu
 		    :box nil)
+

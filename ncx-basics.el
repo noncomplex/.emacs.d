@@ -21,11 +21,11 @@
 (setq undo-limit 20000000)
 (setq undo-strong-limit 40000000)
 
-(require 'ido)
-(ido-mode 1)
-(setq ido-enable-flex-matching t)
-(setq ido-everywhere t)
-(setq ido-show-dot-for-dired t) ;; access dired with /.
+;; (require 'ido)
+;; (ido-mode 1)
+;; (setq ido-enable-flex-matching t)
+;; (setq ido-everywhere t)
+;; (setq ido-show-dot-for-dired t) ;; access dired with /.
 
 (setq temporary-file-directory "a:/temp/")
 ;; (format-time-string "---------------- %a, %d %b %y: %I:%M%p")
