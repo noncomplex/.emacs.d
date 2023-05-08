@@ -43,10 +43,13 @@
   (define-key xah-fly-command-map (kbd "b") 'switch-to-buffer)
   (define-key xah-fly-command-map (kbd "B") 'unmapped-binding-msg)
   (define-key xah-fly-command-map (kbd "p") 'forward-word)
-  (define-key xah-fly-command-map (kbd "a") 'set-mark-command)
   (define-key xah-fly-command-map (kbd "w") 'execute-extended-command)
   (define-key xah-fly-command-map (kbd "f") 'isearch-forward)
   (define-key xah-fly-command-map (kbd "n") 'find-file)
+
+  ;; region stuff
+  (define-key xah-fly-command-map (kbd "a") 'set-mark-command)
+  (define-key xah-fly-command-map (kbd "D") 'kill-region)
   
   (define-key xah-fly-command-map (kbd "F") 'python-black-buffer) ;; TODO: possibly turn this into a generic formatting command in the future
   
@@ -59,7 +62,20 @@
   (define-key xah-fly-command-map (kbd "J") 'newline)
 
   (define-key xah-fly-command-map (kbd "P") 'run-python)
+
+  ;; future stuff
+  (define-key xah-fly-command-map (kbd "I") 'unmapped-binding-msg) ;; some kind of insert command?
+  (define-key xah-fly-command-map (kbd "A") 'unmapped-binding-msg) ;; some kind of append command?
+  (define-key xah-fly-command-map (kbd "Q") 'unmapped-binding-msg)
+  (define-key xah-fly-command-map (kbd "W") 'unmapped-binding-msg)
+  (define-key xah-fly-command-map (kbd "E") 'unmapped-binding-msg)
+  (define-key xah-fly-command-map (kbd "R") 'unmapped-binding-msg)
+  (define-key xah-fly-command-map (kbd "T") 'unmapped-binding-msg)
+  (define-key xah-fly-command-map (kbd "Y") 'unmapped-binding-msg)
   (global-set-key (kbd "C-n") 'newline))
+
+
+
 
 (global-set-key (kbd "S-SPC") 'xah-fly-command-mode-activate)
 
