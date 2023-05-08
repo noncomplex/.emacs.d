@@ -51,6 +51,7 @@ flycheck_*.el
 # jedi python
 elpy/
 .python-environments/
+anaconda-mode/
 
 # mac
 .DS_Store

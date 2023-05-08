@@ -7,6 +7,11 @@
 (setq python-indent-guess-indent-offset t)  
 (setq python-indent-guess-indent-offset-verbose nil)
 
+(add-hook 'python-mode-hook
+(lambda ()
+  (ncx-package-install 'anaconda-mode) ;; works nicely with dumb-jump
+  (anaconda-mode)))
+
 ;; js
 (setq js-indent-level 2)
 (add-hook 'go-mode-hook

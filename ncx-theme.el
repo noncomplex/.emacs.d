@@ -21,13 +21,13 @@
 (set-face-foreground 'font-lock-function-name-face fg-color)
 (set-face-foreground 'font-lock-variable-name-face fg-color)
 (set-face-foreground 'font-lock-string-face xanadu) ;; #A6AA9A
-(set-face-foreground 'font-lock-comment-face "#44A368")
+(set-face-foreground 'font-lock-comment-face "#56ac77") ;; #44A368
 
 (set-face-foreground 'minibuffer-prompt "#41D1A1")
 (set-face-foreground 'ido-subdir "#738678")
 
 (set-face-background 'region "#72a4ff")
-(set-face-foreground 'region "white")
+(set-face-foreground 'region fg-color)
 
 (set-face-attribute 'mode-line nil
                     :background "#1F262A"
