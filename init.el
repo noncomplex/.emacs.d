@@ -4,8 +4,30 @@
 (load-file "~/.emacs.d/ncx-coding.el")
 (load-file "~/.emacs.d/ncx-theme.el")
 
-;; on rare occassion I need to download packages
+
 ;; ---------------------------------------------
-;; (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
-;; (package-initialize) ;; causes 'End of file during parsing' error when loading if uncommented
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(package-initialize) ;; causes 'End of file during parsing' error when loading if uncommented
 ;; (package-refresh-contents)
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+(use-package dumb-jump
+  :ensure t)
+(add-hook 'xref-backend-functions #'dumb-jump-xref-activate)
+
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages '(dumb-jump use-package)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

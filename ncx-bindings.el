@@ -69,7 +69,7 @@
   (define-key xah-fly-command-map (kbd "Q") 'unmapped-binding-msg)
   (define-key xah-fly-command-map (kbd "W") 'unmapped-binding-msg)
   (define-key xah-fly-command-map (kbd "E") 'unmapped-binding-msg)
-  (define-key xah-fly-command-map (kbd "R") 'unmapped-binding-msg)
+  (define-key xah-fly-command-map (kbd "R") 'read-only-mode)
   (define-key xah-fly-command-map (kbd "T") 'unmapped-binding-msg)
   (define-key xah-fly-command-map (kbd "Y") 'unmapped-binding-msg)
   (global-set-key (kbd "C-n") 'newline))

@@ -48,5 +48,9 @@ flycheck_*.el
 # directory configuration
 .dir-locals.el
 
+# jedi python
+elpy/
+.python-environments/
+
 # mac
 .DS_Store
