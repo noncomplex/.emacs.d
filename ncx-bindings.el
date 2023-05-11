@@ -63,6 +63,8 @@
 
   (define-key xah-fly-command-map (kbd "P") 'run-python)
 
+  (define-key xah-fly-command-map (kbd "SPC c") 'ncx-highlight-comments)
+
   ;; future stuff
   (define-key xah-fly-command-map (kbd "I") 'unmapped-binding-msg) ;; some kind of insert command?
   (define-key xah-fly-command-map (kbd "A") 'unmapped-binding-msg) ;; some kind of append command?
@@ -73,9 +75,6 @@
   (define-key xah-fly-command-map (kbd "T") 'unmapped-binding-msg)
   (define-key xah-fly-command-map (kbd "Y") 'unmapped-binding-msg)
   (global-set-key (kbd "C-n") 'newline))
-
-
-
 
 (global-set-key (kbd "S-SPC") 'xah-fly-command-mode-activate)
 

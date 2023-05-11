@@ -8,10 +8,11 @@
     (package-install package)))
 
 (add-to-list 'load-path "~/.emacs.d/xah-fly-keys")
+(load-file "~/.emacs.d/ncx-theme.el")
 (load-file "~/.emacs.d/ncx-basics.el")
 (load-file "~/.emacs.d/ncx-bindings.el")
 (load-file "~/.emacs.d/ncx-coding.el")
-(load-file "~/.emacs.d/ncx-theme.el")
+
 
 ;; jump to and from definitions with M-. / M-,
 (ncx-package-install 'dumb-jump)
