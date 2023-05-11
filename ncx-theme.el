@@ -28,7 +28,7 @@
 (set-face-foreground 'font-lock-comment-face ncx-comment-regular-face) ;; #44A368 56ac77 #80FD87
 
 (set-face-foreground 'minibuffer-prompt "#41D1A1")
-(set-face-foreground 'ido-subdir "#738678")
+;; (set-face-foreground 'ido-subdir "#738678")
 
 (set-face-background 'region "#3B3F4D")
 (set-face-foreground 'region fg-color)
