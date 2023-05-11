@@ -14,7 +14,6 @@
 ;; (set-foreground-color "#8bc6a2")
 (set-cursor-color mystic)
 
-
 (set-face-foreground 'font-lock-keyword-face mystic) ;; AA96AA
 (set-face-foreground 'font-lock-type-face "#2EC09C")
 (set-face-foreground 'font-lock-builtin-face "#2EC09C")

@@ -10,10 +10,8 @@
 (add-to-list 'load-path "~/.emacs.d/xah-fly-keys")
 (load-file "~/.emacs.d/ncx-theme.el")
 (load-file "~/.emacs.d/ncx-basics.el")
-(load-file "~/.emacs.d/ncx-bindings.el")
 (load-file "~/.emacs.d/ncx-coding.el")
-
-
+(load-file "~/.emacs.d/ncx-bindings.el")
 ;; jump to and from definitions with M-. / M-,
 (ncx-package-install 'dumb-jump)
 (add-hook 'xref-backend-functions #'dumb-jump-xref-activate)
@@ -25,7 +23,7 @@
 (setq completion-styles '(orderless basic))
 (setq completion-category-overrides '((file (styles basic partial-completion))))
 
-;; a bit nicer than ido
+;; a bit nicer than ido imo
 (ncx-package-install 'vertico)
 (vertico-mode)
 (set-face-background 'vertico-current "#3B3F4D")

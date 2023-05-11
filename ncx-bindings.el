@@ -64,6 +64,7 @@
   (define-key xah-fly-command-map (kbd "P") 'run-python)
 
   (define-key xah-fly-command-map (kbd "SPC c") 'ncx-highlight-comments)
+  (define-key xah-fly-command-map (kbd "SPC y") 'ncx-python-flake-check)
 
   ;; future stuff
   (define-key xah-fly-command-map (kbd "I") 'unmapped-binding-msg) ;; some kind of insert command?

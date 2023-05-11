@@ -1,5 +1,4 @@
 ;; stuff for coding
-
 ;; python
 (when (executable-find "ipython")
   (setq python-shell-interpreter "ipython"))
@@ -11,6 +10,13 @@
 (lambda ()
   (ncx-package-install 'anaconda-mode) ;; works nicely with dumb-jump
   (anaconda-mode)))
+
+(defun ncx-python-flake-check ()
+  (interactive)
+  (compile (concat "flake8 " buffer-file-name)))
+
+;; (defun ncx-python-autofixes ()
+  ;; (interactive))
 
 ;; js
 (setq js-indent-level 2)
