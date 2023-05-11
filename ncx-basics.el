@@ -16,6 +16,15 @@
 (when window-system
   (set-frame-position (selected-frame) 900 500)
   (set-frame-size (selected-frame) 160 40))
+(setq initial-frame-alist '((width . 100)
+                            (tool-bar-lines . 0) 
+                            (vertical-scroll-bars . nil)
+                            (internal-border-width . 0)))
+(setq default-frame-alist '((tool-bar-lines . 0) 
+                            (vertical-scroll-bars . nil)
+                            (width . 100) (height . 40) 
+                            (internal-border-width . 0)))
+(setq-default left-margin-width 1 right-margin-width 1)
 
 ;; undo limits
 (setq undo-limit 20000000)

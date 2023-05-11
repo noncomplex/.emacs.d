@@ -1,9 +1,9 @@
 ;; alts: Iosevka Comfy Liberation Mono, Roboto Mono, Consolas, Cousine
 ;; (set-frame-font "Liberation Mono-14" nil t) 
-(set-face-attribute 'default nil :font "Roboto Mono-14:weight=book")
-(setq initial-frame-alist '((fullscreen . maximized) (font . "Roboto Mono-14:weight=book"))
-      default-frame-alist '((fullscreen . maximized) (font . "Roboto Mono-14:weight=book")))
-(set-face-attribute 'mode-line nil :font "DejaVu Sans Mono-14")
+(set-face-attribute 'default nil :font "Jetbrains Mono-13:weight=normal")
+(setq initial-frame-alist '((fullscreen . maximized) (font . "Jetbrains Mono-13:weight=book"))
+      default-frame-alist '((fullscreen . maximized) (font . "Jetbrains Mono-13:weight=book")))
+(set-face-attribute 'mode-line nil :font "Jetbrains Mono-14")
 (setq fg-color "#c3c0b0")
 (setq xanadu "#738678")
 (setq mystic "#D65282") ;; use for errors
@@ -13,6 +13,7 @@
 (set-foreground-color fg-color)
 ;; (set-foreground-color "#8bc6a2")
 (set-cursor-color mystic)
+(set-face-background 'fringe "#262632")
 
 (set-face-foreground 'font-lock-keyword-face mystic) ;; AA96AA
 (set-face-foreground 'font-lock-type-face "#2EC09C")
