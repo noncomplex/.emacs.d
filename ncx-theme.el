@@ -4,7 +4,7 @@
 (setq initial-frame-alist '((fullscreen . maximized) (font . "Jetbrains Mono-13:weight=book"))
       default-frame-alist '((fullscreen . maximized) (font . "Jetbrains Mono-13:weight=book")))
 (set-face-attribute 'mode-line nil :font "Jetbrains Mono-14")
-(setq fg-color "#c3c0b0")
+(setq fg-color "#B2BDB6")
 (setq xanadu "#738678")
 (setq mystic "#D65282") ;; use for errors
 (set-background-color "#3B3F4D") ;; forgot what, but based on #262832
@@ -49,3 +49,5 @@
   (if (string= (face-attribute font-lock-comment-face :foreground) ncx-comment-regular-face)
       (set-face-foreground 'font-lock-comment-face ncx-comment-highlight-face)
     (set-face-foreground 'font-lock-comment-face ncx-comment-regular-face)))
+
+
