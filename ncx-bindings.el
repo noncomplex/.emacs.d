@@ -15,12 +15,12 @@
 (with-eval-after-load 'xah-fly-keys
   (define-key dired-mode-map (kbd "S-SPC") 'xah-fly-command-mode-activate)
   (define-key xah-fly-command-map (kbd "e") 'xah-fly-insert-mode-activate)
-  (define-key xah-fly-command-map (kbd "q") 'ncx-quit) ;; general key when something wrong happens
+  ;; (define-key xah-fly-command-map (kbd "q") 'ncx-quit) ;; general key when something wrong happens
   (define-key xah-fly-command-map (kbd "<") 'beginning-of-buffer) ;; corresponds to default
   (define-key xah-fly-command-map (kbd ">") 'end-of-buffer) ;; corresponds to default
   
   ;; window movement
-  (define-key xah-fly-command-map (kbd "0") 'delete-window) ;; corresponds to default
+  (define-key xah-fly-command-map (kbd "q") 'delete-window)
   (define-key xah-fly-command-map (kbd "3") 'split-window-right) ;; corresponds to default
   (define-key xah-fly-command-map (kbd "r") 'other-window)
   
@@ -29,11 +29,10 @@
   (define-key xah-fly-command-map (kbd "i") 'previous-line)
 
   ;; intuitively 1 key from left char and right char
-  (define-key xah-fly-command-map (kbd "h") 'move-beginning-of-line)
-  (define-key xah-fly-command-map (kbd ";") 'move-end-of-line)
+  (define-key xah-fly-command-map (kbd "h") 'xah-beginning-of-line-or-block) ;; 'move-beginning-of-line
+  (define-key xah-fly-command-map (kbd ";") 'xah-end-of-line-or-block) ;; 'move-end-of-line
 
-  (define-key xah-fly-command-map (kbd "k") 'save-buffer)
-  (define-key xah-fly-command-map (kbd "K") 'kill-this-buffer)
+  (define-key xah-fly-command-map (kbd "s") 'save-buffer)
 
   (define-key xah-fly-command-map (kbd "u") 'backward-char)
   (define-key xah-fly-command-map (kbd "o") 'forward-char)
@@ -44,7 +43,6 @@
   (define-key xah-fly-command-map (kbd "B") 'unmapped-binding-msg)
   (define-key xah-fly-command-map (kbd "p") 'forward-word)
   (define-key xah-fly-command-map (kbd "w") 'execute-extended-command)
-  (define-key xah-fly-command-map (kbd "f") 'isearch-forward)
   (define-key xah-fly-command-map (kbd "n") 'find-file)
 
   ;; region stuff
@@ -52,9 +50,13 @@
   (define-key xah-fly-command-map (kbd "D") 'kill-region)
   
   (define-key xah-fly-command-map (kbd "F") 'python-black-buffer) ;; TODO: possibly turn this into a generic formatting command in the future
-  
+
+  ;; no isearch-backward just forward with C-i, C-j
+  ;; C-s in isearch brings up the last search
+  (define-key xah-fly-command-map (kbd "f") 'isearch-forward) ;; f is the common search key
   (define-key isearch-mode-map (kbd "C-i") 'isearch-repeat-backward)
   (define-key isearch-mode-map (kbd "C-j") 'isearch-repeat-forward)
+
 
   (define-key isearch-mode-map (kbd "S-SPC") 'ncx-quit)
 
@@ -65,6 +67,9 @@
 
   (define-key xah-fly-command-map (kbd "SPC c") 'ncx-highlight-comments)
   (define-key xah-fly-command-map (kbd "SPC y") 'ncx-python-flake-check)
+
+  ;; (define-key xah-fly-command-map (kbd "") 'ncx-highlight-comments)
+  ;; (define-key xah-fly-command-map (kbd ",") 'xah-beginning-of-line-or-block)
 
   ;; future stuff
   (define-key xah-fly-command-map (kbd "I") 'unmapped-binding-msg) ;; some kind of insert command?

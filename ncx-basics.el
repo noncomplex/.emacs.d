@@ -11,6 +11,10 @@
 (setq auto-save-default nil)
 (setq auto-save-list-file-prefix nil)
 (show-paren-mode 1)
+(setq isearch-lazy-count t)
+(setq lazy-count-prefix-format "(%s/%s) ")
+(setq lazy-count-suffix-format nil)
+(setq search-whitespace-regexp ".*?")
 
 ;; frame size
 (when window-system
@@ -24,20 +28,20 @@
                             (vertical-scroll-bars . nil)
                             (width . 100) (height . 40) 
                             (internal-border-width . 0)))
+
 (setq-default left-margin-width 1 right-margin-width 1)
 
 ;; undo limits
 (setq undo-limit 20000000)
 (setq undo-strong-limit 40000000)
 
-;; (require 'ido)
-;; (ido-mode 1)
-;; (setq ido-enable-flex-matching t)
-;; (setq ido-everywhere t)
-;; (setq ido-show-dot-for-dired t) ;; access dired with /.
+(require 'ido)
+(ido-mode 1)
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(setq ido-show-dot-for-dired t) ;; access dired with /.
 
 (setq temporary-file-directory "a:/temp/")
-;; (format-time-string "---------------- %a, %d %b %y: %I:%M%p")
 
 (defun open-terminal ()
   (interactive)
