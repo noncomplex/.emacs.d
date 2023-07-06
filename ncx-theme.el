@@ -5,7 +5,7 @@
       default-frame-alist '((fullscreen . maximized) (font . "Jetbrains Mono-13:weight=book")))
 
 (set-face-attribute 'mode-line nil :font "Jetbrains Mono-14")
-(set-face-foreground 'mode-line "fg-color")
+(set-face-foreground 'mode-line fg-color)
 (set-face-background 'mode-line "#2e2e3d")
 (set-face-attribute 'mode-line nil
                     :box nil)
