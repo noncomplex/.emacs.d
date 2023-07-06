@@ -4,16 +4,6 @@
 (setq initial-frame-alist '((fullscreen . maximized) (font . "Jetbrains Mono-13:weight=book"))
       default-frame-alist '((fullscreen . maximized) (font . "Jetbrains Mono-13:weight=book")))
 
-(set-face-attribute 'mode-line nil :font "Jetbrains Mono-14")
-(set-face-foreground 'mode-line fg-color)
-(set-face-background 'mode-line "#2e2e3d")
-(set-face-attribute 'mode-line nil
-                    :box nil)
-(set-face-foreground 'mode-line-inactive "fg-color")
-(set-face-background 'mode-line-inactive "#1e1e27")
-(set-face-attribute 'mode-line-inactive nil
-                    :box nil)
-
 (setq fg-color "#B2BDB6")
 (setq xanadu "#738678")
 (setq mystic "#D65282") ;; use for errors
@@ -23,6 +13,16 @@
 
 (set-cursor-color fg-color)
 (set-face-background 'fringe "#262632")
+
+(set-face-attribute 'mode-line nil :font "Jetbrains Mono-14")
+(set-face-foreground 'mode-line fg-color)
+(set-face-background 'mode-line "#2e2e3d")
+(set-face-attribute 'mode-line nil
+                    :box nil)
+(set-face-foreground 'mode-line-inactive "fg-color")
+(set-face-background 'mode-line-inactive "#1e1e27")
+(set-face-attribute 'mode-line-inactive nil
+                    :box nil)
 
 (set-face-foreground 'font-lock-keyword-face mystic) ;; #8ae234
 (set-face-foreground 'font-lock-type-face "lightblue")
