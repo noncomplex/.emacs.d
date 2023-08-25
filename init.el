@@ -9,8 +9,11 @@
 
 (ncx-package-install 'markdown-mode)
 ;; need a function to set settings based on OS
-(custom-set-variables
- '(markdown-command "C:/Progra~1/Pandoc/pandoc.exe")) ;;Progra~1 is an alias for Program Files
+(setq markdown-command "C:/Progra~1/Pandoc/pandoc.exe") ;;Progra~1 is an alias for Program Files
+
+(ncx-package-install 'slime)
+(setq inferior-lisp-program "sbcl")
+
 (ncx-package-install 'go-mode)
 
 ;; (ncx-package-install 'vertico)

@@ -16,6 +16,8 @@
 (setq lazy-count-suffix-format nil)
 (setq search-whitespace-regexp ".*?")
 
+(setq split-width-threshold 1) ;; default vertical splits
+
 ;; frame size
 (when window-system
   (set-frame-position (selected-frame) 900 500)
