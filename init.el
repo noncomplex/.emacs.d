@@ -7,6 +7,12 @@
     (package-refresh-contents)
     (package-install package)))
 
+(ncx-package-install 'markdown-mode)
+;; need a function to set settings based on OS
+(custom-set-variables
+ '(markdown-command "C:/Progra~1/Pandoc/pandoc.exe")) ;;Progra~1 is an alias for Program Files
+(ncx-package-install 'go-mode)
+
 ;; (ncx-package-install 'vertico)
 ;; (vertico-mode)
 ;; (set-face-background 'vertico-current "#3B3F4D")
@@ -21,3 +27,15 @@
 (load-file "~/.emacs.d/ncx-coding.el")
 (load-file "~/.emacs.d/ncx-bindings.el")
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages '(markdown-mode go-mode)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
