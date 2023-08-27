@@ -3,7 +3,7 @@
 (toggle-scroll-bar -1)
 (tool-bar-mode -1)
 (fringe-mode -1)
-(blink-cursor-mode 0) ;; may not work in GNU/Linu
+(blink-cursor-mode 0) ;; may not work in GNU/Linux
 (setq inhibit-startup-screen t)
 (setq-default truncate-lines t)
 (defalias 'yes-or-no-p 'y-or-n-p)
@@ -42,8 +42,6 @@
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
 (setq ido-show-dot-for-dired t) ;; access dired with /.
-
-(setq temporary-file-directory "a:/temp/")
 
 (defun open-terminal ()
   (interactive)
